@@ -1,0 +1,15 @@
+<view class="view-banner{{style}}">
+  <swiper              
+    class="swiper{{style}}" 
+    autoplay
+    style='height: {{data.details.boxHeight}}px'
+    circular
+    indicator-active-color='{{data.details.color1}}'
+    indicator-dots='{{data.details.dotShow}}'>
+    <block wx:for="{{data.details.imgs}}" wx:key="item">
+      <swiper-item class='style{{style}}'>
+        <image src="{{item.src}}" catchtap='go' data-link='{{item.link}}' class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

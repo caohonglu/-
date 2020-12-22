@@ -1,0 +1,127 @@
+/* pages/index/group/group.wxss */
+.group{
+  width: 750rpx;
+  background: #ffffff;
+}
+.group-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  padding: 20rpx;
+}
+.group-item-left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  flex: 1;
+}
+.btn{
+  text-align: center;
+}
+.btn-item{
+  color: red;
+  border-radius: 50rpx;
+  border: 1px solid red;
+  padding: 5rpx 20rpx;
+}
+.shopname{
+  
+}
+.notuan{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-items: center;
+  margin: 0 20rpx;
+  padding: 15rpx 0;
+}
+.avatar{
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  margin-right:16rpx;
+}
+.area{
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 250rpx;
+}
+.right{
+  margin-left: 4px;
+  font-size: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 50px;
+  line-height: 10px;
+}
+.layer{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 750rpx;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index:999;
+
+}
+.layer-item{
+  background-color: #ffffff;
+  width: 600rpx;
+  margin-top: 30vh;
+  padding-bottom: 10px;
+}
+
+.layer-item-title{
+  padding-top:12px;
+  padding-bottom:12px;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+.layer-item-row{
+  padding: 10px 10px 0px 10px;
+  position: relative;
+  color: #555;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.shopname{
+  font-size: 16px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  height: 70rpx;
+  border-radius: 50rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  width: 247rpx;
+}
+.search-icon{
+  width: 30rpx;
+}
+
+
+.notuan-btn{
+  margin-left: 4px;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 50px;
+}

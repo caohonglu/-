@@ -1,0 +1,12 @@
+<view class="buypeople" wx:if='{{totalSale != 0}}'>
+  <view class='evaluation-nums'>
+    <block wx:for='{{avatar}}' wx:key='{{index}}'>
+      <image wx:if='{{index < 7}}' class='people-avatar'  src='{{item.avatar}}'></image>
+    </block>
+    <text class='ellipsis'>...</text>
+  </view>
+  <view class='evaluation-more'>
+    <view>已有{{monthSale}}人购买</view>
+    <!--<image class='evaluation-more-img' src='/images/my/menu/right.png'></image>-->
+  </view>
+</view>

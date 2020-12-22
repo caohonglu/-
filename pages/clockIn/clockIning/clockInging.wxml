@@ -1,0 +1,38 @@
+<view class='{{page ? "page":""}}'>
+  <view class='tab-btn'>
+      <view bindtap='tab_btn' data-index='0' class='{{active==0?"on":""}}'>打卡</view>
+      <view bindtap='tab_btn' data-index='1' class='{{active==1?"on":""}}'>足迹</view>
+  </view>
+
+  <view class='main2' hidden='{{active!=0}}'>
+      <view class='head'>
+          <image src='{{pic_url}}'></image>
+          <view class='top'>
+              <image src='{{avatar}}'></image>
+              <input value='{{text}}' focus='{{focus}}' bindinput='write'></input>
+          </view>
+          <view class='bot'>
+              <image catchtap='chooseImg' src='/images/clockIn/clockInging/b1.png'></image>
+              <image catchtap='bindfocus' src='/images/clockIn/clockInging/b2.png'></image>
+          </view>
+      </view>
+      <view class='Quotations'>
+          <text bindtap='quotations'>打卡生成图片</text>
+          <view class='name'>打卡语录</view>
+          <view class='tip'>选择你中意的文字放在打卡图上</view>
+      </view>
+      <view class='list'>
+        <block wx:for='{{quotations}}' wx:key='{{index}}'>
+          <view class='item' wx:if='{{item.length != 0}}' catchtap='write' data-text='{{item}}'>
+              {{item}}
+              <image src='/images/clockIn/clockInging/x.png'></image>
+          </view>
+        </block>
+      </view>
+  </view> 
+
+  <image catchtap='index' class='home' src='/images/clockIn/home.png'></image>
+</view>
+<footer bindshow='show'></footer>
+
+<canvas  canvas-id='toimg' class='canvas'></canvas>

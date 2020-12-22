@@ -1,0 +1,4 @@
+<GroupContent></GroupContent>
+<GroupCard></GroupCard>
+
+<GroupCenter name='{{title}}'></GroupCenter>

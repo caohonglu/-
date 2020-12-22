@@ -1,0 +1,127 @@
+.tab-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 210rpx;
+    border-top: 2rpx solid #fcfcfc;
+}
+
+.tab-btn view {
+    font-size: 28rpx;
+    line-height: 80rpx;
+    color: #626262;
+}
+
+.tab-btn view.on {
+    border-bottom: 5rpx solid #fa0000;
+    color: #fa0000;
+}
+
+.main2 .head {
+    height: 750rpx;
+    position: relative;
+}
+
+.main2 .head>image {
+    width: 750rpx;
+    height: 750rpx;
+    z-index: -1;
+}
+
+.main2 .head .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30rpx;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main2 .head .top image {
+    width: 80rpx;
+    height: 80rpx;
+    float: left;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+
+.main2 .head .top input {
+    line-height: 80rpx;
+    font-size: 28rpx;
+    color: #fff;
+    flex:1;
+}
+
+.main2 .head .bot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 30rpx 230rpx;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main2 .head .bot image {
+    width: 88rpx;
+    height: 87rpx;
+}
+
+.main2 .Quotations {
+    padding: 50rpx 20rpx;
+}
+
+.main2 .Quotations .name {
+    font-size: 42rpx;
+    color: #050505;
+}
+
+.main2 .Quotations .tip {
+    font-size: 26rpx;
+    margin-top: 10rpx;
+    color: #a1a1a1;
+}
+
+.main2 .Quotations text {
+    font-size: 24rpx;
+    margin-top: 24rpx;
+    border: 2rpx solid #ff5150;
+    line-height: 56rpx;
+    color: #ff5150;
+    border-radius: 28rpx;
+    padding: 0 30rpx;
+    float: right;
+}
+
+.main2 .list {
+    padding: 0 20rpx;
+}
+
+.main2 .list .item {
+    line-height: 120rpx;
+    padding: 0 30rpx;
+    color: #424242;
+    font-size: 28rpx;
+    border: 1rpx solid #d9d9d9;
+    margin-bottom: 30rpx;
+    border-radius: 6rpx;
+}
+
+.main2 .list .item image {
+    float: right;
+    width: 38rpx;
+    height: 36rpx;
+    margin: 40rpx 0;
+}
+
+
+.home {
+  width: 73rpx;
+  height: 73rpx;
+  position: fixed;
+  bottom:20%;
+  right:5%;
+}

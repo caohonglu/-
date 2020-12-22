@@ -1,0 +1,61 @@
+/* pages/home/addAddress/addAddress.wxss */
+
+page{
+  
+}
+.addAddress{
+  
+}
+.addAddress-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:30rpx;
+  padding:22rpx 15rpx;
+}
+.addAddress-header-img{
+  width:38rpx;
+  height:38rpx;
+}
+.addAddress-item{
+  width:750rpx;
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  padding:20rpx 0; 
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+
+.addAddress-item-left{
+  width:130rpx;
+  font-size:25rpx;
+  padding-left:20rpx;
+}
+
+.addAddress-item-right{
+  font-size:27rpx;
+  display:flex;
+  word-wrap:break-word;
+  word-break: break-all;
+  text-align:left;
+  width:590rpx;
+  padding-left:10rpx;
+}
+
+.post{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:750rpx;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100rpx;
+  border-top:1px solid #aaa;
+  box-shadow:0px -1px 1px #eee;
+}
+
+.placeholder{
+  color: #999999;
+}

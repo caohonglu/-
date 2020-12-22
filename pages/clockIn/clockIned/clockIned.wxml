@@ -1,0 +1,17 @@
+<view class='{{page ? "page":""}}'>
+  <view class='tab-btn'>
+      <view bindtap='tab_btn' data-index='0' class='{{active==0?"on":""}}'>打卡</view>
+      <view bindtap='tab_btn' data-index='1' class='{{active==1?"on":""}}'>足迹</view>
+  </view>
+  <view class='main3' hidden='{{active!=0}}'>
+      <view class='head'>
+          <image src='{{shareImage}}'></image>
+      </view>
+      <view class='btn'>
+          <view catchtap='getAuthSetting'>保存到手机</view>
+          <text>小提示：活动结束图片将被清除，请及时保存哦！</text>
+      </view>
+  </view>
+  <image catchtap='index' class='home' src='/images/clockIn/home.png'></image>
+</view>
+<footer bindshow='show'></footer>

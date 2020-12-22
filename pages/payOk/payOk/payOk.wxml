@@ -1,0 +1,19 @@
+<!--pages/payOk/payOk/payOk.wxml-->
+<view class='payok'>
+  <image class='payok-img' src='/images/payok/ok.png'></image>
+  <view class='payok-text'>恭喜您支付成功!</view>
+  <button open-type='share' class='payok-btn' style='color:{{fontcolor}}; background:{{background}}'>点击转发晒单</button>
+</view>
+
+<mask wx:if='{{layerFlag}}' catchtap='show'>
+  <layer catchtap>
+    <image class='close' mode="widthFix" catchtap="show" src='/images/search/search/del.png'></image>
+    <image class='icon' mode="widthFix" src='https://imgs.juanpao.com/ui/sonhonbao.png'></image>
+    <form report-submit bindsubmit="share" class='layer-btn'>
+      <button open-type="share" class='layer-btn'>click</button>
+    </form>
+  </layer>
+</mask>
+
+
+<footer></footer>

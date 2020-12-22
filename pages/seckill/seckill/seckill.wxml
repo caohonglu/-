@@ -1,0 +1,3 @@
+<SeckillHeader background='{{background}}' menu='{{menu}}' bind:change='change' />
+<!--<SeckillScroll data='{{data}}'  />-->
+<SeckillGoods data='{{data}}' />

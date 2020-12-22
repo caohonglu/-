@@ -1,0 +1,27 @@
+<view class='groupInfo'>
+  <view class='card'>
+    <view class='card-top'>
+      <view class='top-left'>
+        <view class='left-name'>{{goodsName}}</view>
+        <view class='left-instructions'>{{short_name}}</view>
+      </view>
+      <button class='top-right' open-type='share'>
+        <image class='share' src='/images/goodsItem/share.png'></image>
+      </button>
+    </view>
+
+    <view wx:if='{{is_open}}' class='card-center'>已售{{monthSale}}件/仅剩{{stocks}}件</view>
+    <view wx:else class='card-center'>已售{{monthSale}}件</view>
+    <view class='card-bottom'>
+      <view class='bottom-line'>
+        <view class='line-start' style='background: red'></view>
+        <view class='line-end'></view>
+      </view>
+      <view class='bottom-info'>
+        <view>{{startTime}}开始</view>
+        <view>{{endTime}}结束</view>
+        <view class='info-right'>预计{{sendTime}}配送</view>
+      </view>
+    </view>
+  </view>
+</view>

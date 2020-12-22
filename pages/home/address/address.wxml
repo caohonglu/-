@@ -1,0 +1,26 @@
+<!--pages/home/address/address.wxml-->
+<view class='address'>
+  <block wx:for='{{addressData}}' wx:key='{{index}}'>
+    <view class='address-item' bindtap='show' data-id='{{item.id}}'>
+      <image class='address-surnames' src='/images/address/address.png'></image>
+      <view class='address-content'>
+        <view class='address-row'>
+          <view class='address-name'>{{item.name}}</view>
+          <view class='address-phone'>{{item.phone}}</view>
+        </view>
+        <view  class='address-address'>
+          <view class='address-default'>{{item.is_default == 0 ? "":"默认"}}</view>
+          {{item.loction_address}}-{{item.loction_name}}-{{item.address}}
+        </view>
+      </view>
+      
+      <view class='address-edit'>
+        编辑
+      </view>
+    </view>
+  </block>
+</view>
+<login noLogin='{{noLogin}}'/>
+<view class='footer' bindtap='go'>
+  添加地址
+</view>

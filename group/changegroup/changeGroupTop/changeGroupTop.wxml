@@ -1,0 +1,17 @@
+<!--pages/group/changegroup/changeGroupTop/changeGroupTop.wxml-->
+<view class='changeGroupTop'>
+  <view class='search' style='background: {{background}}'>
+    <input class='search-item' placeholder='请输入' bindblur='search' placeholder-class='placeholder'></input>
+    <image class='search-icon' src='/images/search/search/search.png'></image>
+  </view>
+  <view class='card' wx:if='{{show}}'>
+    <image src='{{avatar}}' class='card-avatar'></image>
+    <view class='card-title'>当前社区:</view>
+    <view class='post' catchtap='go' wx:if='{{status}}'>申请团长</view>
+    <view class='card-item'>
+      <view class='card-name'>团长: {{name}}</view>
+      <view class='card-community'>{{area_name}}</view>
+      <view class='card-address'>{{address}}</view>
+    </view>
+  </view>
+</view>

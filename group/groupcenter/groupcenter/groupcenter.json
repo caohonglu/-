@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "GroupContent": "/group/groupcenter/groupContent/groupContent",
+    "GroupCard": "/group/groupcenter/groupCard/groupCard",
+    "GroupCenter": "/group/groupfooter/groupfooter"
+  }
+}

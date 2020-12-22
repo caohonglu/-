@@ -1,0 +1,126 @@
+.tab-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 210rpx;
+    border-top: 2rpx solid #fcfcfc;
+}
+
+.tab-btn view {
+    font-size: 28rpx;
+    line-height: 80rpx;
+    color: #626262;
+}
+
+.tab-btn view.on {
+    border-bottom: 5rpx solid #fa0000;
+    color: #fa0000;
+}
+
+.main3 {
+  margin-top: 15rpx;
+}
+
+.main3 .head {
+    height: 702rpx;
+    position: relative;
+}
+
+.main3 .head>image {
+    width: 100%;
+    height: 100%;
+}
+
+.main3 .head .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main3 .head .top image {
+    width: 80rpx;
+    height: 80rpx;
+    float: left;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+
+.main3 .head .top view {
+    line-height: 80rpx;
+    font-size: 28rpx;
+    color: #fff;
+}
+
+.main3 .head .bot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 30rpx;
+    width: 100%;
+}
+
+.main3 .head .bot .up {
+    color: #fff;
+    font-size: 38rpx;
+    line-height: 72rpx;
+}
+
+.main3 .head .bot .down {
+    overflow: hidden;
+}
+
+.main3 .head .bot .down>view {
+    float: left;
+    width: 240rpx;
+    padding: 40rpx 0;
+}
+
+.main3 .head .bot .down>view view {
+    font-size: 24rpx;
+    color: #fff;
+}
+
+.main3 .head .bot .down>view view text {
+    font-size: 40rpx;
+}
+
+.main3 .head .bot .down image {
+    float: right;
+    width: 164rpx;
+    height: 164rpx;
+}
+
+.main3 .btn {
+    margin-top: 30rpx;
+}
+
+.main3 .btn view {
+    width: 300rpx;
+    line-height: 58rpx;
+    border: 2rpx solid #ff5150;
+    border-radius: 28rpx;
+    text-align: center;
+    color: #ff5150;
+    font-size: 30rpx;
+    display: block;
+    margin: 0 auto;
+}
+
+.main3 .btn text {
+    display: block;
+    text-align: center;
+    line-height: 160rpx;
+    font-size: 24rpx;
+    color: #525252;
+}
+
+.home {
+  width: 73rpx;
+  height: 73rpx;
+  position: fixed;
+  bottom:20%;
+  right:5%;
+}

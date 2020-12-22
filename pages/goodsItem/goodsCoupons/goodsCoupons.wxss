@@ -1,0 +1,144 @@
+.coupons{
+	background:#fff;
+	margin-top:2vw;
+	padding:3vw 2vw 3vw 4vw;
+  color: #888;
+}
+.coupons-text{
+	color:red;
+	font-size:3.6vw;
+	font-weight:600;
+}
+.coupons-item{
+	margin-bottom:2vw;
+}
+.coupons-item-img{
+	width:5vw;
+}
+.coupons-item-text{
+	font-size:3.5vw;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width:60vw;
+	margin-left:0.5vw;
+}
+.coupons-go{
+	display:flex;
+	align-items:center;
+	font-size:4vw;
+  justify-content: space-between;
+}
+.coupons-img{
+	width:5vw;
+	height:5vw;
+}
+.coupons-layer-title{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:center;
+	font-size:4.5vw;
+	padding:1vw;
+}
+.coupons-layer-header{
+	padding-bottom:1vw;
+}
+.coupons-layer-informaotion{
+	width:96vw;
+	overflow:hidden;
+	height:65vh;
+	margin-bottom:2vw;
+}
+.coupons-layer-item{
+	margin-bottom:3vw;
+	background:#fff2e6;
+	position:relative;
+	padding: 2vw 2vw;
+	color:#ff952e;
+	display:flex;
+	justify-content:start;
+	align-items:center;
+	flex-flow:row wrap;
+}
+.coupons-layer-content{
+	width:61.8vw;
+	border-right:1px dashed #ffc791;
+	font-size:3.2vw;
+}
+.coupons-layer-price{
+	font-size:6vw;
+}
+.coupons-layer-get{
+	width:27vw;
+	margin-left:2vw;
+	height:16vw;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:4vw;
+}
+.coupons-layer-item::after{
+	width:4vw;
+	height:4vw;
+	background:#fff;
+	position:absolute;
+	top:-2vw;
+	content:"";
+	border-radius:50%;
+	right:30vw;
+}
+.coupons-layer-item::before{
+	width:4vw;
+	height:4vw;
+	background:#fff;
+	position:absolute;
+	bottom:-2vw;
+	content:"";
+	border-radius:50%;
+	right:30vw;
+}
+.layer-buttom{
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:15rpx 0;
+}
+.layer-buttom-btn{
+	background:#ff9901;
+  width: 600rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70rpx;
+  border-radius: 55rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+.mask{
+	z-index:6;
+	position:fixed;
+	bottom:0vw;
+	left:0vw;
+	background:rgba(0,0,0,0.5);
+	width:100vw;
+	height:100vh;
+}
+.layer{
+  width:96vw;
+	height:80vh;
+	padding:0vw 2vw;
+	padding-top:2vw;
+	background:#fff;
+	position:fixed;
+	bottom:0vw;
+	border-top-left-radius:2vw 2vw;
+	border-top-right-radius:2vw 2vw; 
+}
+.scroll{
+  height: 99%;
+}

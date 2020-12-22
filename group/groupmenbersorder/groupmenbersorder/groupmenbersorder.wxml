@@ -1,0 +1,3 @@
+<GroupMenbersOrderHeader bind:search='search' bind:changList='getList' status='{{status}}'/>
+<GroupOrderList bind:deleteData='deleteData' data='{{data}}'/>
+<GroupCenter name='{{title}}'></GroupCenter>

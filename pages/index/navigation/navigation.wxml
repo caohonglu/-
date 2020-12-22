@@ -1,0 +1,23 @@
+<view class="view-grid">
+  <view 
+    class="list type{{data.details.style}}" 
+    style="background-color:{{data.details.color2}};color:{{data.details.color1}}">
+    <block 
+      wx:for="{{data.details.imgs}}" 
+      wx:key="itemImg" 
+      wx:for-item="itemImg" 
+      wx:for-index="itemIndex">
+      <view 
+        data-link="{{itemImg.link}}" 
+        catchtap='go'
+        class="item" 
+        style="font-size:{{data.details.fontSize}}">
+        <image 
+          src="{{itemImg.src}}"  
+          class='navigator-img'
+          style="border-radius:{{data.details.radius}}"></image>
+        {{itemImg.text}}
+      </view>
+    </block>
+  </view>
+</view>

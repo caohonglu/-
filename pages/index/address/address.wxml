@@ -1,0 +1,21 @@
+<view class="view-location" style="background-color:{{data.details.color2}};color:{{data.details.color1}}">
+  <view class="list" style="">
+    <view class="item1" wx:if="{{data.details.style=='1'}}">
+      <view
+        catchtap='navgar'
+        data-lon='{{data.details.lon}}' 
+        data-lat='{{data.details.lat}}'>{{data.details.name}}</view>
+    </view>
+    <view class="item2" wx:if="{{data.details.style=='2'}}">
+      <map 
+        id='address' 
+        markers='{{marker}}' 
+        longitude='{{data.details.lon}}' 
+        latitude='{{data.details.lat}}'
+        catchtap='navgar'
+        data-lon='{{data.details.lon}}' 
+        data-lat='{{data.details.lat}}'
+      ></map>
+    </view>
+  </view>
+</view>

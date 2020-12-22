@@ -1,0 +1,95 @@
+/* pages/home/address/address.wxss */
+page{
+  background-color:#eee;
+}
+.address{
+  padding-bottom:100rpx;
+  padding-top:20rpx;
+}
+.address-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:30rpx;
+  padding:22rpx 15rpx;
+  background-color:#fff;
+  position:fixed;
+  top:0rpx;
+  left:0rpx;
+  width:750rpx;
+}
+.address-header-img{
+  width:38rpx;
+  height:38rpx;
+}
+.address-item{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  background:#fff;
+  border-top:1px solid #eee;
+  padding:10rpx 0;
+}
+
+.address-surnames{
+  font-size:30rpx;
+  width:75rpx;
+  height:75rpx;
+  background-color:#bec0c2;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+  margin:0rpx 20rpx;
+}
+
+.address-content{
+  flex:1;
+}
+
+.address-row{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+.address-name{
+  font-size:30rpx;
+}
+
+.address-phone{
+  font-size:24rpx;
+  color:#aaabab;
+}
+.address-address{
+   font-size:24rpx;
+   word-wrap:break-word;
+   word-break: break-all;
+}
+.address-default{
+  display:inline;
+}
+
+
+.address-edit{
+  margin:20rpx;
+  padding:10rpx 20rpx;
+  font-size:24rpx;
+  border-left:1px solid #eee;
+  color:#bbbbbb;
+}
+
+.footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:750rpx;
+  height:100rpx;
+  background-color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:35rpx;
+}
+

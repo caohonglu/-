@@ -1,0 +1,169 @@
+.list{
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  padding: 20rpx 20rpx 0 20rpx;
+}
+.style1{
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.style1 .item{
+  width: 750rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.style1 .item:last-child{
+  border-bottom: 0px solid #eee;
+}
+.style1 .item .img{
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 20rpx;
+}
+.style1 .item .footer{
+  margin-top: 30rpx;
+}
+.icon1{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 50rpx;
+}
+.icon2, .icon3{
+  display: none;
+}
+.style2 .item{
+  width: 750rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+.style2 .item:first-child{
+  margin-top: 20rpx;
+}
+.style2 .item:last-child{
+  border-bottom: 0px solid #eee;
+}
+.style2 .item .img{
+  width: 710rpx;
+  height: 710rpx;
+}
+
+
+.style3{
+  justify-content: space-between;
+}
+.style3 .item{
+  width: 347rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+
+.style3 .item .img{
+  width: 345rpx;
+  height: 345rpx;
+}
+.style3 .item .con{
+  padding: 0 20rpx;
+}
+.style3 .item .con .txt2{
+  display: none;
+}
+
+
+
+
+.con{
+  padding:0px 0px;
+  line-height:24px;
+  flex: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 50rpx;
+}
+.txt1{
+  color:#fc4444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.txt2{
+  color:#999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.price{
+  color: red;
+  font-size: 35rpx;
+}
+.price::before{
+  content: '￥';
+  font-size: 25rpx;
+}
+.sold{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 20rpx;
+  color: #bbb;
+}
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item{
+  position: relative;
+}
+
+.absloute{
+  position: absolute;
+  left: 0rpx;
+  top: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50% 50%;
+  color: #fff;
+}
+.style1 .item .absloute{
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.style2 .item .absloute{
+  width: 710rpx;
+  height: 710rpx;
+}
+.style3 .item .absloute{
+  width: 345rpx;
+  height: 345rpx;
+  top: 0;
+}

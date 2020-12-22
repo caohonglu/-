@@ -1,0 +1,41 @@
+<!--pages/goodsItem/footer/footer.wxml-->
+<view class='footer'>
+  <view class='footer-menu' bindtap='goIndex'>
+    <image class='footer-menu-img' src='/images/goodsItem/footer/shop.png'/>
+    <view class='footer-menu-text'>店铺</view>
+  </view>
+  <navigator open-type="navigate" url='/pages/shopCart/shopCart/shopCart' class='footer-menu'>
+    <image class='footer-menu-img' src='/images/goodsItem/footer/shopcart.png'/>
+    <view class='footer-menu-text'>购物车</view>
+  </navigator>
+  <button open-type="contact" class='footer-menu'>
+    <image class='footer-menu-img' src='/images/goodsItem/footer/kefu.png'/>
+    <view class='footer-menu-text'>客服</view>
+  </button>
+  <view class='footer-button' wx:if='{{goodstype != 2}}'>
+    <view class='footer-button-left' bindtap='addGoodsShop'>加入购物车</view>
+    <view class='footer-button-right' bindtap='toBuy'>立即购买</view>
+  </view>
+  <view class='footer-button' wx:else>
+    <view class='footer-button-left group-btn' bindtap='toBuy'>
+      <view>{{price}}</view>
+      <view>单独购买</view>
+    </view>
+    <view class='footer-button-right group-btn' bindtap='toGroupBuy'>
+      <view>{{group_price}}</view>
+      <view>拼团购买</view>
+    </view>
+  </view>
+</view>
+
+
+<view catchtap="close" class='mask' wx:if='{{propertyFlag}}'>
+  <view catchtap class='layer'>
+    <view class='layer-title'>请选择拼团人数</view>
+    <view class='layer-content'>
+      <block wx:for='{{property}}' wx:key='{{item}}'>
+        <view catchtap="change" data-index='{{index}}' class='content-item'>{{item}}人团</view>
+      </block>
+    </view>
+  </view>
+</view>

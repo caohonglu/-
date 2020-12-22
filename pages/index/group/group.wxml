@@ -1,0 +1,29 @@
+
+<view class='group' wx:if='{{show}}'>
+  <view class='group-item'  wx:if='{{area.length != 0}}'  catchtap='show'>
+    <view class='group-item-left'>
+      <image class='avatar' src='{{avatar}}'></image>
+      <view class='area'>{{area}}</view>
+      <view class='right'  style='background:{{background}}' >切换</view>
+    </view>
+    <view class='search' data-url='/pages/search/search/search' catchtap="go">
+      <image mode="widthFix" class='search-icon' src='/images/index/search/search.png'></image>
+    </view>
+  </view>
+  <view wx:else class='notuan'>
+    <button class='notuan-btn'  style='background:{{background}}' catchtap='show'>选择团长</button>
+    <view class='shopname'></view>
+    <view class='search' data-url='/pages/search/search/search' catchtap="go">
+      <image mode="widthFix" class='search-icon' src='/images/index/search/search.png'></image>
+    </view>
+  </view>
+
+  <view class='layer' wx:if='{{flag}}'>
+    <view class='layer-item'>
+      <view class='layer-item-title'>选择小区</view>
+      <block wx:for='{{data}}' wx:key='{{data.id}}'>
+        <view bindtap='chosseArea' data-data='{{item}}' data-uid='{{item.uid}}' class='layer-item-row'>{{item.area_name}}</view>
+      </block>
+    </view>
+  </view>
+</view>

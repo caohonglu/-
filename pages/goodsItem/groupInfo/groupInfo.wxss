@@ -1,0 +1,106 @@
+/* pages/goodsItem/groupInfo/groupInfo.wxss */
+.groupInfo{
+  padding:22rpx 22rpx 0rpx 22rpx;
+}
+.card{
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 25rpx;
+}
+
+.card-top{
+  display: flex;
+  align-items: flex-start;
+}
+.top-left{
+  flex: 1;
+  font-size: 32rpx;
+  font-weight: 300;
+  margin-right: 10rpx;
+}
+.left-name{
+
+}
+.left-instructions{
+  font-size: 28rpx;
+  color: #b9b9b9;
+}
+.top-right{
+  width: 60rpx;
+  height: 60rpx;
+  border: 1px solid #fff;
+  background: none;
+  position: relative;
+  padding: 0rpx;
+  margin-right: 12rpx;
+  overflow: inherit;
+}
+.share{
+  width: 60rpx;
+  height: 60rpx;
+  border: none;
+}
+
+
+.card-center{
+  font-size: 28rpx;
+  color: #b9b9b9;
+  margin: 26rpx 0;
+}
+.bottom-line{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60rpx;
+  padding: 0 50rpx;
+}
+
+.line-start, .line-end{
+  flex:1;
+  height: 5rpx;
+  background: #E4E4E4;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.line-start::after{
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  background: inherit;
+  position: absolute;
+  border-radius: 50%;
+  right: -10rpx;
+  z-index: 1;
+}
+
+.line-start::before{
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  background: inherit;
+  position: absolute;
+  border-radius: 50%;
+}
+.line-end::after{
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  background: inherit;
+  position: absolute;
+  border-radius: 50%;
+  right: -10rpx;
+  z-index: 1;
+}
+
+.bottom-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25rpx;
+  font-weight: 300;
+}
+
+.info-right{
+  margin-right: -10rpx;
+}

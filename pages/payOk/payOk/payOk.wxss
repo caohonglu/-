@@ -1,0 +1,48 @@
+.payok{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.payok-img{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 40rpx;
+}
+
+.payok-text{
+  margin-bottom: 30rpx;
+  font-size: 40rpx;
+}
+.payok-btn{
+  margin-top: 50rpx;
+  width: 500rpx;
+}
+
+mask{
+  width: 750rpx;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+layer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+layer .icon{
+  width: 600rpx;
+}
+.layer-btn{
+  position: absolute;
+  bottom: 40rpx;
+  width: 600rpx;
+  opacity: 0;
+}
+.close{
+  width: 60rpx;
+  position: absolute;
+  right: 0;
+}

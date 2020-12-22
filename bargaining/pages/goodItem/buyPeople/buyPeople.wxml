@@ -1,0 +1,9 @@
+<view wx:if='{{data.avatar.length != 0}}' class='buyPeople'>
+  <view class='avatar'>
+    <block wx:for='{{data.avatar}}'>
+      <image wx:if='{{index < 7}}' src='{{item.avatar}}' class='avatar-item'></image>
+    </block>
+  </view>
+  <view wx:if='{{data.avatar < 7}}'>...</view>
+  <view class='content'>等136人参与了砍价</view>
+</view>

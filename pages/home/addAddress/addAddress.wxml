@@ -1,0 +1,43 @@
+<!--pages/home/addAddress/addAddress.wxml-->
+<form bindsubmit="postShopContact" report-submit>
+<view class='addAddress'>
+  <view class='addAddress-item'>
+    <view class='addAddress-item-left'>收货人</view>
+    <input confirm-type='next' value='{{name}}' name='name' class='addAddress-item-right'  placeholder='请输入收货人姓名' type='text' />
+  </view>
+  <view class='addAddress-item'>
+    <view class='addAddress-item-left'>手机号码</view>
+    <input confirm-type='next' value='{{phone}}' name='phone' class='addAddress-item-right'  placeholder='请输入手机号码' type='number' />
+  </view>
+  <!--<view class='addAddress-item'>
+    <view class='addAddress-item-left'>所在地区</view>
+    <picker mode="region" bindchange="bindRegionChange">
+      <view class='addAddress-item-right'>
+      <view wx:if='{{province.length == 0}}'>请选择地址</view>
+       {{province}} {{city}} {{area}}
+      </view>
+      <input hidden='{{true}}' value='{{province}}' name='province' class='addAddress-item-right'  type='text' />
+      <input hidden='{{true}}' value='{{city}}' name='city' class='addAddress-item-right'  type='text' />
+      <input hidden='{{true}}' value='{{area}}' name='area' class='addAddress-item-right'  type='text' />
+      <input hidden='{{true}}' value='{{street}}' name='street' class='addAddress-item-right'  type='text' />
+    </picker>
+  </view>-->
+  <view class='addAddress-item'  catchtap="chooseLocal">
+    <view class='addAddress-item-left'>所在地</view>
+    <div wx:if='{{loction_address.length === 0}}' class='addAddress-item-right placeholder'>请选择所在地</div>
+    <div wx:else class='addAddress-item-right'>{{loction_address}}【{{loction_name}}】</div>
+    <input hidden='{{true}}' value='{{loction_address}}' name='loction_address' class='addAddress-item-right'  type='text' />
+  </view>
+  <view class='addAddress-item'>
+    <view class='addAddress-item-left'>详细地址</view>
+    <textarea confirm-type='next' value='{{address}}' name='address' class='addAddress-item-right' placeholder='请输入详细地址'/>
+  </view>
+  <view class='addAddress-item'>
+    <view class='addAddress-item-left'>设置默认地址</view>
+    <switch class='addAddress-item-right' checked='{{is_default == 1}}' name='is_default' bindchange="changeSwitch"/>
+  </view>
+</view>
+
+<button class='post' form-type="submit">保存</button>
+
+</form>

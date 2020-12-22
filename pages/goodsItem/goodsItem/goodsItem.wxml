@@ -1,0 +1,131 @@
+<!--pages/goodsItem/goodsItem.wxml-->
+<view class='goodsitem'>
+  <!--图片-->
+  <goodsimage 
+    banner='{{banner}}' 
+    price='{{price}}' 
+    goodsName='{{goodsName}}'
+    monthSale='{{monthSale}}'
+    kdf='{{kdf}}'
+    stocks='{{stocks}}'
+    goodstype='{{goodstype}}'
+    line_price='{{line_price}}'
+    short_name='{{short_name}}'
+    max_price='{{max_price}}'
+    min_price='{{min_price}}'
+    goodsid='{{id}}'
+    video_url='{{video_url}}'
+    video_pic_url='{{video_pic_url}}'
+    video_status='{{video_status}}'
+    simple_info='{{simple_info}}'
+    older_with_newer='{{older_with_newer}}'
+    open_group_preferential='{{open_group_preferential}}'
+    group_type='{{group_type}}'
+    bind:showShare='showShare'
+  ></goodsimage>
+
+
+  <!--秒杀商品价格-->
+  <goodsPrice
+    max_price='{{max_price}}'
+    min_price='{{min_price}}'
+    end_time='{{end_time}}'
+    start_time='{{start_time}}'
+    interFlag='{{interFlag}}'
+    wx:if='{{goodstype == 1}}'/>
+    
+  <!--秒杀商品信息-->
+  <goodsInfo
+    wx:if='{{goodstype == 1}}'
+    end_time='{{end_time}}'
+    start_time='{{start_time}}'
+    send_time='{{send_time}}'
+    goodsName='{{goodsName}}'
+    short_name='{{short_name}}'
+    stocks='{{stocks}}'
+    monthSale='{{monthSale}}'
+    goodsName='{{goodsName}}'
+    bind:showShare='showShare'/>
+
+  <!--购买人数-->
+  <buyPeople
+    goodsid='{{id}}'
+    monthSale='{{monthSale}}'
+    totalSale='{{totalSale}}'
+    avatar='{{avatar}}'/>
+
+  <!--弹窗,放的商品分类价格-->
+  <layer 
+    show='{{show}}' 
+    goodsid='{{id}}' 
+    btnStatus='{{btnStatus}}'
+    tuanNum='{{tuanNum}}'
+    group_id='{{group_id}}'
+    service_goods_is_ship='{{service_goods_is_ship}}'
+    start_time='{{start_time}}'
+    type='{{type}}'
+    supplier_id='{{supplier_id}}'
+    submit_type='{{submit_type}}'
+    bind:colseLayer='colseLayer'
+  ></layer>
+
+  <!--红包领取-->
+  <goodsCoupons wx:if='{{goodstype != 2}}' ></goodsCoupons>
+
+  <!--选择规格-->
+  <goodsclassify wx:if='{{goodstype != 2}}' bind:show='showLayer'></goodsclassify>
+
+  <!--商品评价-->
+  <goodsComment goodsId='{{id}}'></goodsComment>
+
+  <!--拼团推荐-->
+  <groupRecommended
+    bind:setTuanId='setTuanId'
+    bind:show='showLayer'
+    interFlag='{{interFlag}}'
+    goodsid='{{id}}'
+    wx:if='{{goodstype == 2}}'/>
+
+  <!--拼团玩法介绍-->
+  <groupPlayer wx:if='{{goodstype == 2}}' />
+
+  
+  <!--店铺信息-->
+  <store label='{{label}}'></store>
+  
+  <!--富文本-->
+  <view class='rithtext'>
+    <view class='rithtext-title'>- 商品详情 -</view>
+    <rich-text nodes='{{info_header}}'></rich-text>
+    <view class='table' wx:if='{{attribute[0]}}'>
+      <block wx:for='{{attribute}}' wx:if='{{item != ""}}' wx:key='index'>
+        <view style='width: {{index % 2 == 0 && index + 1 == attribute.length ? "99.7%" : "50%"}}' class='table-item'>{{item}}</view>
+      </block>
+    </view>
+    <rich-text nodes='{{html}}'></rich-text>
+    <rich-text nodes='{{info_bottom}}'></rich-text>
+  </view>
+
+  <!--直播-->
+  <navigator wx:if='{{roomid != 0}}' url="plugin-private://{{appid}}/pages/live-player-plugin?room_id={{roomid}}" class="live">
+    <image class="live-icon" src='/images/live/in.gif'></image>
+    <view class="live-label">正在直播</view>
+  </navigator>
+
+  <!--分享页面-->
+  <Share 
+    goodsid='{{id}}' 
+    bannerList='{{banner}}'
+    goodName='{{goodsName}}'
+    shareFlag='{{shareFlag}}' 
+    bind:showShare='showShare' />
+  <!--底部菜单-->
+  <goodsfooter
+    property='{{property}}'
+    goodstype='{{goodstype}}'
+    price='{{price}}'
+    group_price='{{min_price}}'
+    bind:show='showLayer'
+    bind:toBuy='showLayer'
+    show='{{show}}'></goodsfooter>
+</view>

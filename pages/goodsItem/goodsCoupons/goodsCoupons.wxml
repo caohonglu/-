@@ -1,0 +1,30 @@
+<view wx:if='{{couponsData.length != 0}}' catchtap='couponsShow' class="coupons">
+		<view class='coupons-go'>
+			<view>领券</view>
+			<image class='coupons-img' src='/images/my/menu/right.png'></image>
+		</view>
+		
+		<view wx:if='{{layerFlag}}'  class='mask'>
+			<view class='layer'>
+				<view class='coupons-layer-title'>优惠</view>
+				<view class='coupons-layer-informaotion'>
+					<scroll-view scroll-y class='scroll'>
+            <block  wx:for='{{couponsData}}' wx:key='{{item.id}}'>
+              <view class='coupons-layer-item'>
+                <view class='coupons-layer-content'>
+                  <view>￥<span class='coupons-layer-price'>{{item.price}}</span> {{item.name}}</view>
+                  <view>{{item.conditions}}</view>
+                  <view>{{item.validity}}</view>
+                </view>
+                <view class='coupons-layer-get' catchtap='getCoupons' data-id='{{item.id}}'>立即领取</view>
+              </view>
+            </block>
+						
+					</scroll-view>
+				</view>
+        <view class='layer-buttom'>
+          <view catchtap='couponsShow' class='layer-buttom-btn' style='background: {{background}}; color: {{fontcolor}}'>关闭</view>
+        </view>
+			</view>
+		</view>
+  </view>

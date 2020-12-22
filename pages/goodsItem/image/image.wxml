@@ -1,0 +1,66 @@
+
+
+
+
+
+
+
+<!--pages/goodsItem/image/image.wxml-->
+<view>
+  <image bindtap='goCart' src='/images/goodsItem/image/gouwuche.png' class='cart'></image>
+  <swiper 
+    class='swiper' 
+    indicator-dots="true" 
+    indicator-color='{{swiper_color}}' 
+    indicator-active-color="{{swiper_activecolor}}" 
+    autoplay='{{autoplay}}'
+  >
+    <swiper-item  wx:if='{{video_status == 1}}'>
+        <video bindplay='changeswiper' enable-progress-gesture='{{false}}'  poster="{{banner[0]}}" src='{{video_url}}'></video>
+      </swiper-item>
+    <block wx:for="{{banner}}" wx:key="{{index}}" wx:key='id'>
+      <swiper-item>
+        <image src="{{item}}" data-id='{{item.id}}' class='swiper-item' bindtap='go' />
+        <view wx:if='{{stocks == 0}}' class='absloute'>
+          <view class='content'>已售完</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='banner-data' wx:if='{{goodstype == 0}}'>
+  <view class='good-flex'>
+    <view class='left'>
+      <view class='price'>{{min_price || price}}{{min_price == max_price ? '' : '-'}}{{min_price == max_price ? '' : max_price}}</view>
+      <view class='line_price'>{{line_price}}</view>
+    </view>
+    <view wx:if='{{is_open}}' class='monthSale'>已售{{monthSale}}/剩余{{stocks}}</view>
+    <view wx:else class='monthSale'>已售{{monthSale}}</view>
+  </view>
+  <view class='good-flex'>
+    <view class='left'>
+      <view class='name'>{{goodsName}}</view>
+    </view>
+    <image class='share-icon' catchtap='showShare' src='/images/goodsItem/share.png'></image>
+  </view>
+  <view class='short_name'>{{simple_info}}</view>
+</view>
+<view class='banner-data2' wx:if='{{goodstype == 2}}'>
+  <view class='good-flex'>
+    <view class='left'>
+      <view class='price'>{{min_price || price}}{{min_price == max_price ? '' : '-'}}{{min_price == max_price ? '' : max_price}}</view>
+      <view wx:if='{{older_with_newer}}' class='older_with_newer'>老带新</view>
+      <view wx:if='{{open_group_preferential}}' class='open_group_preferential'>开团优惠</view>
+      <view class='group_type'>{{group_type}}</view>
+    </view>
+    <view class='monthSale'>已拼{{monthSale}}件</view>
+  </view>
+  <view class='good-flex'>
+    <view class='left'>
+      <view class='name'>{{goodsName}}</view>
+    </view>
+    <image class='share-icon' catchtap='showShare' src='/images/goodsItem/share.png'></image>
+  </view>
+  <view class='short_name'>{{simple_info}}</view>
+</view>

@@ -1,0 +1,23 @@
+.list{
+  display: flex;
+  overflow: hidden;
+  background: #fff;
+  padding: 20rpx;
+  justify-content: space-between;
+}
+.left{
+  width: 460rpx;
+  height: 750rpx;
+}
+.right{
+  width: 245rpx;
+  display: flex;
+  height: 750rpx;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-flow: column wrap;
+}
+.small-img{
+  width: 247.5rpx;
+  height: 247.5rpx;
+}

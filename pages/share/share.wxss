@@ -1,0 +1,18 @@
+image{
+  width: 750rpx;
+  height: 750rpx;
+}
+canvas{
+  width: 750rpx;
+  height: 1050rpx;
+  opacity: 1;
+}
+.share-banner{
+  width: 750rpx;
+  height: 1050rpx;
+}
+.savbtn{
+  color: #ffffff;
+  width: 500rpx;
+  border-radius: 50rpx;
+}

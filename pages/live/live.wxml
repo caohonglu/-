@@ -1,0 +1,32 @@
+<view>
+  <navigator url="plugin-private://{{appid}}/pages/live-player-plugin?room_id={{item.roomid}}" wx:for='{{list}}' wx:key='roomid' class="view">
+    <view class="left">
+      <view class="live-status">
+        <view class="live-status-item" wx:if='{{item.liveStatus == 102}}'>
+          <view class="live-status-label">预告</view>
+          <view class="live-status-date">{{item.date}}</view>
+        </view>
+        <view class="live-status-item" wx:elif='{{item.liveStatus == 101}}'>
+          <image src='/images/live/in.gif'></image>
+          <view class="live-status-date">正在直播</view>
+        </view>
+        <view class="live-status-item isover" wx:else>{{item.date}}</view>
+      </view>
+      <image mode='aspectFill' class="left-icon" src='{{item.cover_img}}'></image>
+    </view>
+    
+    <view class="right">
+      <view class="title">{{item.name}}</view>
+      <view class="flex">
+        <image class="avatar" src='{{item.anchor_img}}'></image>
+        <view class="name">{{item.anchor_name}}</view>
+      </view>
+      <view class="right-bottom">
+        <view wx:for='{{item.goods}}' class="img">
+          <image class="img-icon" src='{{item.cover_img}}'></image>
+          <view class="price">￥{{item.price / 100}}</view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</view>

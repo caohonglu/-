@@ -1,0 +1,20 @@
+<view class="list style{{data.details.style}}" style="background-color:{{data.details.color2}}">
+  <block wx:for="{{gooddata}}" wx:key="itemImg" wx:for-item="itemImg" wx:for-index="itemIndex">
+    <view class="item" data-link='{{itemImg.id}}' catchtap='go'>
+      <image class="img" src="{{itemImg.pic_urls[0]}}"></image>
+      <view wx:if='{{itemImg.stocks == 0}}' class='absloute'>
+        <view class='content'>已售完</view>
+      </view>
+      <view class="con">
+        <view class="txt1" style="color:{{data.details.color1}};font-size:{{data.details.fontSize}}">{{itemImg.name}}</view>
+        <view class="txt2">{{itemImg.short_name}}</view>
+        <image class='icon{{data.details.style}}' src='/images/index/classgood/cart.png'></image>
+        <view class='footer'>
+          <view class="price">{{itemImg.price}}</view>
+          <view class='sold'>售{{itemImg.sold}}/剩{{itemImg.stocks}}</view>
+        </view>
+        
+      </view>
+    </view>
+  </block>
+</view>

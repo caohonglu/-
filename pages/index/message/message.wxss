@@ -1,0 +1,43 @@
+.list{
+  padding: 10px;
+}
+.textarea{
+  margin-bottom: 10px;
+  padding: 20rpx;
+  background-color: #fff;
+  width: 100%;
+}
+.con{
+  margin-bottom: 10px;
+}
+.item{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.tt{
+  position: absolute;
+  left: 1em;
+}
+.input{
+  padding-left: 4em;
+  height: 40px;
+  background-color: #fff;
+  border: 0px;
+}
+.input:last-child{
+  border-top:#eee 1px solid;
+}
+.operate{
+  text-align: center;
+}
+.btn{
+  display:inline-block;
+  margin:0 auto;
+  min-width:50%;
+  height:40px;
+  border:none;
+  line-height:40px;
+  font-size:1.5em;
+  background-color:#fff;
+}

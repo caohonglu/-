@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "promoteOrderHeader": "/group/promoteOrder/promoteOrderHeader/promoteOrderHeader",
+    "promoteOrderList": "/group/promoteOrder/promoteOrderList/promoteOrderList",
+    "GroupCenter": "/group/groupfooter/groupfooter"
+  }
+}

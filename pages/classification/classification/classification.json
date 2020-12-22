@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ShopCart":"/pages/classification/shopcart/shopcart"
+  }
+}

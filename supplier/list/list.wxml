@@ -1,0 +1,27 @@
+<view>
+  <view style='z-index: -1;'>
+    <image class="header" mode="widthFix"></image>
+  </view>
+  
+  <view class="list">
+    <view class="list-item" wx:for='{{10}}' wx:key='item'>
+      <view class="item-store">
+        <image class="item-logo"></image>
+        <view class="item-top-center">
+          <view class="item-name">南极人专卖店</view>
+          <view class="item-label">柔软舒适柔软舒适柔软舒适柔软舒适柔软舒适柔软舒适</view>
+        </view>
+        <view class="item-btn">进入店铺</view>
+      </view>
+      <view class="item-goods">
+        <view class="goods-item" wx:for='{{3}}' wx:key='item'>
+          <image class="goods-img"></image>
+          <view class="goods-content">
+            <view class="goods-name">小黄瓜100斤限量抢购</view>
+            <view class='goods-price'>12</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

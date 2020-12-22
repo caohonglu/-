@@ -1,0 +1,39 @@
+<view>
+  <view class="header">
+    <image class="header-bg" mode='widthFix'></image>
+    <view class="header-content">
+      <image class="header-avatar"></image>
+      <view class="header-info">
+        <view class="header-name">香格里拉(连云港店)</view>
+        <view class="header-label">
+          <view class="label-item">
+            <image></image>
+            <view>实店认证</view>
+          </view>
+        </view>
+      </view>
+      <view class="header-nav">导航</view>
+    </view>
+  </view>
+  <scroll-view class="classification" scroll-x>
+    <view wx:for='{{20}}' wx:key='item' class='classification-item'>
+      <image class="classification-icon"></image>
+      <view class="classification-name">测试</view>
+    </view>
+  </scroll-view>
+  <view class="goods-list">
+    <image class="goods-img"></image>
+    <view class="goods-content">
+      <view class="goods-name">梨子新鲜10斤带箱唐山里梨子新鲜10斤带箱唐山里</view>
+      <view class="goods-shortname">香甜酥口 产地发货</view>
+      <view class="goods-slod">已售68件</view>
+      <view class="goods-footer">
+        <view class="goods-price">
+          <view>114.99</view>
+          <view>126.66</view>
+        </view>
+        <view class="goods-btn">立即购买</view>
+      </view>
+    </view>
+  </view>
+</view>
